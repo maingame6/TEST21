@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ace-cognitive-execution"
+version = "0.1.0"
+description = "ACE-0: proof of concept for commit-challenge cognitive attestation and gated AI authority"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "MainGame / Tyron Fatooros"}]
+keywords = ["ai-safety", "interpretability", "attestation", "mechanistic-interpretability", "hardware-security"]
+
+[tool.setuptools]
+packages = ["ace0"]
+
+[project.scripts]
+ace0-demo = "ace0.demo:main"
