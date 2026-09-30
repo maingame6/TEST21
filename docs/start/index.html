@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Start Your Website</title>
+<style>
+:root{--bg:#f3f0e9;--ink:#171717;--dark:#121212;--accent:#315f55;--card:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{max-width:980px;margin:auto;padding:46px 20px 80px}.eyebrow{font-size:11px;font-weight:900;letter-spacing:.16em;color:#5e6d65;text-transform:uppercase}
+h1,h2{font-family:Georgia,serif;font-weight:500;letter-spacing:-.03em}h1{font-size:clamp(46px,7vw,76px);line-height:.95;margin:10px 0 18px}h2{font-size:34px;margin:0 0 12px}
+.lede{font-size:19px;line-height:1.65;color:#5d5a55;max-width:760px}.notice{background:var(--dark);color:white;border-radius:24px;padding:26px;margin:30px 0}.notice strong{font-size:22px}.notice p{color:#d9d6d0;line-height:1.65;margin-bottom:0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:28px 0}.step{background:#fff;border:1px solid #ddd8ce;border-radius:18px;padding:18px}.step b{display:block;margin-bottom:8px}.step span{font-size:14px;color:#69655f;line-height:1.5}
+form{background:#fff;border:1px solid #dcd6cb;border-radius:28px;padding:28px;margin-top:28px}.section{padding:24px 0;border-bottom:1px solid #ece7de}.section:last-of-type{border-bottom:0}
+label.title{display:block;font-weight:900;margin-bottom:12px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+input[type=text],input[type=email],input[type=tel],input[type=url],textarea,select{width:100%;border:1px solid #cbc4b8;border-radius:13px;padding:13px 14px;font:inherit;background:#fff}
+textarea{min-height:120px;resize:vertical}.choices{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.choice{display:flex;gap:10px;align-items:flex-start;border:1px solid #ddd6ca;border-radius:13px;padding:12px}.choice input{margin-top:3px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{border:0;border-radius:999px;padding:14px 20px;font-weight:900;font-size:15px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.primary{background:var(--accent);color:#fff}.secondary{background:#171717;color:#fff}.ghost{background:#ece7de;color:#171717}.fine{font-size:12px;color:#767069;line-height:1.55;margin-top:14px}.req{color:#8c382c}
+.auditbox{background:#e8efe9;border:1px solid #cad9ce;border-radius:24px;padding:24px;margin-top:28px}.auditbox h2{margin-top:0}.auditbox p{line-height:1.65;color:#4f5b54}
+@media(max-width:700px){.steps{grid-template-columns:1fr 1fr}.grid,.choices{grid-template-columns:1fr}form{padding:20px}}@media(max-width:420px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<p class="eyebrow">Simple brief • bespoke build • 48-hour turnaround</p>
+<h1>Tell us what you want. We build around you.</h1>
+<p class="lede">The £20/month package is not a fixed template. Colours, banners, photography, wording, layout and sections are all customisable. This form simply gives us enough information to build the right first version.</p>
+
+<div class="notice">
+<strong>Your 48-hour build window starts when we have the essentials.</strong>
+<p>Once we have your business details, a short brief, preferred style and the photos/content you want us to use, we can begin. If photos are still coming, send the brief now and reply to our email with the images afterwards.</p>
+</div>
+
+<div class="steps">
+<div class="step"><b>1. Send the brief</b><span>Tell us what the business needs and what you like.</span></div>
+<div class="step"><b>2. Send photos/content</b><span>Logo, photos, menu/services and anything you want included.</span></div>
+<div class="step"><b>3. We build</b><span>First full build within 48 hours once the required information is in.</span></div>
+<div class="step"><b>4. Review & launch</b><span>You review it, we make reasonable tweaks, then it goes live.</span></div>
+</div>
+
+<div class="auditbox">
+<h2>Not ready to commit? Get a FREE website audit.</h2>
+<p>We’ll point out what your current site is doing well, where it is losing ground, what we would change, and opportunities around mobile UX, technical SEO, local Google visibility, content and conversion. No obligation.</p>
+<a class="btn secondary" id="auditEmail" href="#">GET MY FREE AUDIT</a>
+<p class="fine">Or simply reply to our email with <b>Audit Free</b>. Free audit availability is limited so we can do each one properly.</p>
+</div>
+
+<form id="briefForm">
+<div class="section">
+<label class="title">Your details <span class="req">*</span></label>
+<div class="grid">
+<input id="business" type="text" placeholder="Business name" required>
+<input id="contact" type="text" placeholder="Your name" required>
+<input id="email" type="email" placeholder="Email address" required>
+<input id="phone" type="tel" placeholder="Phone (optional)">
+<input id="website" type="url" placeholder="Current website (if you have one)">
+<input id="domain" type="text" placeholder="Domain you use / want (optional)">
+</div>
+</div>
+
+<div class="section">
+<label class="title">What are you looking for? <span class="req">*</span></label>
+<div class="choices">
+<label class="choice"><input type="checkbox" name="needs" value="£20/month core website" checked><span><b>£20/month core website</b><br>Fully customisable site, hosting, SSL and reasonable updates.</span></label>
+<label class="choice"><input type="checkbox" name="needs" value="Redesign my existing website"><span><b>Redesign existing site</b><br>Keep what works, modernise what does not.</span></label>
+<label class="choice"><input type="checkbox" name="needs" value="Local Ranking / SEO"><span><b>Local Ranking / SEO</b><br>Google Business Profile, technical/local SEO, schema, Search Console and more.</span></label>
+<label class="choice"><input type="checkbox" name="needs" value="Content and social media"><span><b>Content & social</b><br>Website content, graphics, posts, Reels/Shorts and campaigns.</span></label>
+<label class="choice"><input type="checkbox" name="needs" value="Bookings / ordering / enquiries"><span><b>Bookings / sales</b><br>Bookings, ordering, enquiry forms, vouchers, loyalty or QR menus.</span></label>
+<label class="choice"><input type="checkbox" name="needs" value="AI / automation"><span><b>AI & automation</b><br>Website chat, AI receptionist/phone answering and workflow automation.</span></label>
+</div>
+</div>
+
+<div class="section">
+<label class="title">Which pages/features do you want?</label>
+<div class="choices">
+<label class="choice"><input type="checkbox" name="pages" value="Home"><span>Home</span></label><label class="choice"><input type="checkbox" name="pages" value="Menu / Services"><span>Menu / Services</span></label><label class="choice"><input type="checkbox" name="pages" value="About"><span>About</span></label><label class="choice"><input type="checkbox" name="pages" value="Contact / Map"><span>Contact / Map</span></label><label class="choice"><input type="checkbox" name="pages" value="Gallery"><span>Gallery</span></label><label class="choice"><input type="checkbox" name="pages" value="Bookings"><span>Bookings</span></label><label class="choice"><input type="checkbox" name="pages" value="Offers / News"><span>Offers / News</span></label><label class="choice"><input type="checkbox" name="pages" value="Private Hire / Enquiries"><span>Private Hire / Enquiries</span></label>
+</div>
+</div>
+
+<div class="section">
+<label class="title">What style feels right?</label>
+<select id="style">
+<option value="No preference — show me ideas">No preference — show me ideas</option>
+<option>Modern / clean</option>
+<option>Warm / local / friendly</option>
+<option>Premium / elegant</option>
+<option>Bold / colourful</option>
+<option>Minimal / simple</option>
+<option>Keep close to my current branding</option>
+</select>
+</div>
+
+<div class="section">
+<label class="title">Photos & branding</label>
+<div class="choices">
+<label class="choice"><input type="radio" name="photos" value="I have photos and will email them" checked><span>I have photos and will email them after submitting.</span></label>
+<label class="choice"><input type="radio" name="photos" value="Use my current business photos with my permission"><span>You can use my current business photos with my permission.</span></label>
+<label class="choice"><input type="radio" name="photos" value="I need help with images"><span>I need help selecting/sourcing suitable imagery.</span></label>
+<label class="choice"><input type="radio" name="photos" value="Use placeholders first"><span>Use placeholder imagery for the first build.</span></label>
+</div>
+</div>
+
+<div class="section">
+<label class="title" for="brief">Short brief <span class="req">*</span></label>
+<textarea id="brief" required placeholder="What does the business do? What should the website achieve? Anything you definitely want included or definitely dislike?"></textarea>
+</div>
+
+<div class="section">
+<label class="title" for="notes">Anything else?</label>
+<textarea id="notes" placeholder="Colours, examples you like, competitors, specific offers, social links, opening hours, current problems, etc."></textarea>
+</div>
+
+<div class="actions">
+<button class="btn primary" type="submit">SEND MY WEBSITE BRIEF</button>
+<button class="btn ghost" type="button" id="copyBtn">COPY BRIEF</button>
+</div>
+<p class="fine">Submitting opens a pre-filled email in your email app. Attach photos/logo to that email before sending, or send them in a reply afterwards.</p>
+</form>
+</main>
+
+<script>
+const params=new URLSearchParams(location.search);
+const businessParam=params.get('business')||'';
+if(businessParam) document.getElementById('business').value=businessParam;
+const auditSubject='Audit Free'+(businessParam?' - '+businessParam:'');
+const auditBody='Hi Tyron,\n\nI would like the FREE website audit'+(businessParam?' for '+businessParam:'')+'.\n\nPlease review the current site / online presence and tell me what is working, what is weak, and what you would change.\n\nWebsite (if applicable): ';
+document.getElementById('auditEmail').href='mailto:maingamehere@gmail.com?subject='+encodeURIComponent(auditSubject)+'&body='+encodeURIComponent(auditBody);
+
+function selected(name){
+ return [...document.querySelectorAll('[name="'+name+'"]:checked')].map(x=>x.value);
+}
+function buildBrief(){
+ const b=document.getElementById('business').value.trim();
+ const c=document.getElementById('contact').value.trim();
+ const e=document.getElementById('email').value.trim();
+ const p=document.getElementById('phone').value.trim();
+ const w=document.getElementById('website').value.trim();
+ const d=document.getElementById('domain').value.trim();
+ const needs=selected('needs');
+ const pages=selected('pages');
+ const photos=selected('photos');
+ const style=document.getElementById('style').value;
+ const brief=document.getElementById('brief').value.trim();
+ const notes=document.getElementById('notes').value.trim();
+ return [
+  'WEBSITE BRIEF',
+  '',
+  'Business: '+b,
+  'Contact: '+c,
+  'Email: '+e,
+  'Phone: '+(p||'Not provided'),
+  'Current website: '+(w||'None / not provided'),
+  'Domain: '+(d||'Not sure / not provided'),
+  '',
+  'Interested in:',
+  needs.length?needs.map(x=>'• '+x).join('\n'):'• Not selected',
+  '',
+  'Pages / features:',
+  pages.length?pages.map(x=>'• '+x).join('\n'):'• Not selected',
+  '',
+  'Style: '+style,
+  'Photos: '+(photos[0]||'Not selected'),
+  '',
+  'Short brief:',
+  brief,
+  '',
+  'Other notes:',
+  notes||'None',
+  '',
+  'I understand the 48-hour build window begins once the required information/content has been supplied.'
+ ].join('\n');
+}
+document.getElementById('briefForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ if(!e.target.reportValidity()) return;
+ const brief=buildBrief();
+ const business=document.getElementById('business').value.trim();
+ location.href='mailto:maingamehere@gmail.com?subject='+encodeURIComponent('Website Brief - '+business)+'&body='+encodeURIComponent(brief);
+});
+document.getElementById('copyBtn').addEventListener('click',async()=>{
+ const brief=buildBrief();
+ try{await navigator.clipboard.writeText(brief);document.getElementById('copyBtn').textContent='COPIED';}
+ catch(e){alert(brief);}
+});
+</script>
+</body></html>
