@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gowans Ballyspurge — Website Concept</title>
+<style>
+:root{--ink:#241f1a;--cream:#f3ede2;--green:#24392f;--rust:#b75a38;--card:#fffaf2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit}.bar{background:var(--green);color:#fff;padding:10px 16px;text-align:center;font-size:11px;font-weight:900;letter-spacing:.12em}
+header{max-width:1180px;margin:auto;padding:22px 28px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:11px;align-items:center;text-decoration:none;font-family:Georgia,serif;font-size:28px;font-weight:700}.mark{width:40px;height:40px;border-radius:14px;background:var(--rust);color:white;display:grid;place-items:center}nav{display:flex;gap:24px}nav a{text-decoration:none;font-size:14px;font-weight:800}
+.hero{max-width:1180px;margin:20px auto 56px;padding:38px 28px;display:grid;grid-template-columns:1.1fr .9fr;gap:58px;align-items:center}.eyebrow{margin:0 0 13px;color:#91492f;font-size:12px;letter-spacing:.16em;font-weight:900}h1,h2{font-family:Georgia,serif;font-weight:500;letter-spacing:-.035em}h1{margin:0;font-size:clamp(54px,7vw,90px);line-height:.93}h2{margin:0 0 16px;font-size:clamp(40px,5vw,64px);line-height:1}.lede{max-width:650px;margin:25px 0;font-size:20px;line-height:1.6;color:#655e55}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;padding:14px 20px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:850}.primary{background:var(--green);color:white}.secondary{border:1px solid #bdb2a5;background:rgba(255,255,255,.38)}.micro{max-width:570px;margin-top:17px;font-size:12px;line-height:1.5;color:#81786d}
+.art{min-height:500px;position:relative;overflow:hidden;border-radius:34px;background:linear-gradient(#c4d4d0 0 44%,#8f9e67 44% 100%);box-shadow:0 25px 60px rgba(64,51,39,.18)}.sun{position:absolute;width:90px;height:90px;border-radius:50%;background:#e8c16e;right:48px;top:40px}.hill{position:absolute;width:540px;height:220px;border-radius:50% 50% 0 0;background:#71865a;left:-130px;bottom:-65px}.hill2{left:auto;right:-160px;background:#60754f;bottom:-90px}.building{position:absolute;width:250px;height:170px;background:#a64f36;left:50%;bottom:92px;transform:translateX(-50%);border-radius:5px}.roof{position:absolute;width:0;height:0;border-left:150px solid transparent;border-right:150px solid transparent;border-bottom:94px solid #654237;left:-25px;top:-82px}.door{position:absolute;width:70px;height:100px;background:#593b32;left:90px;bottom:0}.music{position:absolute;left:28px;bottom:24px;z-index:3;color:white;font-size:12px;font-weight:900;letter-spacing:.1em}
+.facts{max-width:1180px;margin:auto;padding:0 28px 70px;display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid #d4cabc}.facts div{display:flex;flex-direction:column;gap:7px}.facts span{font-size:11px;color:#91492f;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.section{max-width:1180px;margin:auto;padding:90px 28px}.intro{max-width:760px}.intro>p:last-child{font-size:18px;line-height:1.6;color:#686057}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:42px}.cards article{background:var(--card);border:1px solid #ded4c6;border-radius:22px;padding:24px;min-height:230px}.cards article>span{color:#aa5537;font-size:12px;font-weight:900}.cards h3{font-family:Georgia,serif;font-size:29px;margin:45px 0 10px}.cards p{color:#6d655c;line-height:1.55}.strip{padding:40px max(28px,calc((100vw - 1124px)/2));display:grid;grid-template-columns:repeat(3,1fr);gap:28px;background:var(--green);color:white}.strip div{display:flex;flex-direction:column;gap:8px}.strip strong{font-family:Georgia,serif;font-size:24px}.strip span{color:#cad2cc;line-height:1.5}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:70px}.visitcopy{font-size:20px;line-height:1.8;color:#615a52}.panel{background:var(--card);border:1px solid #ded4c6;border-radius:26px;padding:30px}.panel h3{font-family:Georgia,serif;font-size:30px;margin-top:0}.panel p{display:flex;justify-content:space-between;gap:20px;padding:10px 0;margin:0;border-bottom:1px solid #e9e0d4}.panel span{color:#70685f;text-align:right}.panel small{display:block;margin-top:16px;color:#81786f;line-height:1.5}
+.offer{padding:70px max(28px,calc((100vw - 1124px)/2));background:var(--rust);color:#fff9ef}.offer .eyebrow{color:#2f2924}.offer h2{max-width:920px}.offer>div:first-child>p:last-child{max-width:800px;font-size:18px;line-height:1.6}.offergrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}.offergrid>div{padding:25px;border-radius:20px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3)}.offergrid b{font-size:18px}.offergrid p{line-height:1.8}.disclaimer{font-size:12px;opacity:.82;margin-top:28px}footer{padding:24px max(28px,calc((100vw - 1124px)/2));display:flex;justify-content:space-between;font-size:12px;font-weight:800}
+@media(max-width:780px){nav{display:none}header{padding:16px 20px}.bar{font-size:9px;line-height:1.5}.hero{grid-template-columns:1fr;padding:24px 20px;gap:30px}h1{font-size:48px}.art{min-height:360px}.facts{grid-template-columns:1fr;padding:0 20px 48px;gap:18px}.section{padding:64px 20px}.cards{grid-template-columns:1fr 1fr}.strip{grid-template-columns:1fr;padding:38px 20px}.visit{grid-template-columns:1fr;gap:34px}.offer{padding:58px 20px}.offergrid{grid-template-columns:1fr}footer{padding:20px;flex-direction:column;gap:8px}}
+@media(max-width:470px){.cards{grid-template-columns:1fr}h1{font-size:42px}h2{font-size:40px}.panel p{flex-direction:column;gap:4px}.panel span{text-align:left}}
+</style>
+</head>
+<body>
+<div class="bar">UNOFFICIAL WEBSITE CONCEPT • PRIVATE PREVIEW • £20/MONTH</div>
+<header>
+<a class="brand" href="#top"><span class="mark">G</span><span>Gowans Ballyspurge</span></a>
+<nav><a href="#food">Food</a><a href="#weekends">Weekends</a><a href="#visit">Visit</a><a href="#offer">Website</a></nav>
+</header>
+<main id="top">
+<section class="hero">
+<div>
+<p class="eyebrow">PORTAFERRY • ARDS PENINSULA</p>
+<h1>Good food, live music and a proper local welcome.</h1>
+<p class="lede">A clean, modern website concept for Gowans — built around what makes the place worth visiting: hearty food, relaxed weekends and its setting overlooking Ardminnan Golf Course.</p>
+<div class="actions"><a class="btn primary" href="#food">See the layout</a><a class="btn secondary" href="#visit">Find Gowans</a></div>
+<p class="micro">This is an independently created concept. A live version would use Gowans' own photography, current menus, offers and branding.</p>
+</div>
+<div class="art"><div class="sun"></div><div class="building"><div class="roof"></div><div class="door"></div></div><div class="hill"></div><div class="hill hill2"></div><span class="music">FOOD • MUSIC • WEEKENDS</span></div>
+</section>
+<section class="facts">
+<div><span>Family run</span><strong>Bar & restaurant</strong></div>
+<div><span>Popular for</span><strong>Breakfast, lunch & dinner</strong></div>
+<div><span>Weekends</span><strong>Live music & Sunday Chill</strong></div>
+</section>
+
+<section id="food" class="section">
+<div class="intro"><p class="eyebrow">SAMPLE MENU STRUCTURE</p><h2>Put the food front and centre.</h2><p>A live version could keep the core menu clear while giving specials, weekend events and seasonal dishes room to breathe.</p></div>
+<div class="cards">
+<article><span>01</span><h3>Breakfast</h3><p>Freshly cooked breakfasts and easy morning favourites.</p></article>
+<article><span>02</span><h3>Lunch</h3><p>Hearty lunches, bar favourites and lighter options.</p></article>
+<article><span>03</span><h3>Chef's specials</h3><p>A flexible area for rotating dishes and seasonal offers.</p></article>
+<article><span>04</span><h3>From the bar</h3><p>Drinks, weekend information and event-ready updates.</p></article>
+</div>
+</section>
+
+<section class="strip">
+<div><strong>Made for mobile</strong><span>Hours, menu and directions are easy to find without digging through social posts.</span></div>
+<div><strong>Easy updates</strong><span>Change specials, music nights or opening hours without rebuilding the site.</span></div>
+<div><strong>Built for visitors</strong><span>Useful for golfers, holidaymakers and people discovering the Ards Peninsula.</span></div>
+</section>
+
+<section id="weekends" class="section">
+<div class="intro"><p class="eyebrow">WEEKENDS AT GOWANS</p><h2>Give the atmosphere its own section.</h2><p>Live music and Sunday Chill are part of the reason people come. A proper event area can show what's on this week and give social posts somewhere useful to send customers.</p></div>
+</section>
+
+<section id="visit" class="section visit">
+<div><p class="eyebrow">VISIT GOWANS</p><h2>Just outside Portaferry.</h2><p class="visitcopy">25A Ardminnan Road<br>Portaferry<br>BT22 1QJ</p><a class="btn primary" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=25A+Ardminnan+Road+Portaferry+BT22+1QJ">Open in Maps</a></div>
+<div class="panel"><h3>Public opening hours</h3><p><b>Mon–Thu</b><span>9:30–16:30</span></p><p><b>Fri–Sat</b><span>9:30–19:30</span></p><p><b>Sunday</b><span>9:30–21:30</span></p><p><b>Phone</b><span>07860 771321</span></p><small>Hours shown from current public listings and should be reconfirmed before launch.</small></div>
+</section>
+
+<section id="offer" class="offer">
+<div><p class="eyebrow">PRIVATE WEBSITE CONCEPT</p><h2>Turn this into Gowans' live website for <span>£20/month.</span></h2><p>Basic includes the bespoke website, mobile design, hosting, SSL, menu/opening-hours updates, map/contact information and reasonable content changes.</p></div>
+<div class="offergrid"><div><b>Included</b><p>Custom website<br>Mobile-first design<br>Hosting + SSL<br>Menu & hours<br>Map + contact<br>Content updates</p></div><div><b>Optional upgrades</b><p>Event listings<br>Social content<br>Auto-posting<br>Promo videos<br>Review management<br>SEO<br>AI phone answering</p></div></div>
+<p class="disclaimer">This preview is independently created for demonstration purposes and is not Gowans Ballyspurge's official website.</p>
+</section>
+</main>
+<footer><span>Gowans Ballyspurge website concept</span><span>Portaferry, County Down</span></footer>
+</body>
+</html>
