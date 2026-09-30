@@ -32,6 +32,11 @@ textarea{min-height:120px;resize:vertical}.choices{display:grid;grid-template-co
 <p>Once we have your business details, a short brief, preferred style and the photos/content you want us to use, we can begin. If photos are still coming, send the brief now and reply to our email with the images afterwards.</p>
 </div>
 
+<div class="notice" style="background:#e8efe9;color:#17231d">
+<strong style="color:#17231d">YOUR WEBSITE IS NEVER ANOTHER JOB ON YOUR LIST</strong>
+<p style="color:#4f5d55"><b>Real staff monitor website-change requests 24/7.</b> Message us on WhatsApp, Telegram, text or email whenever something changes. Take a photo of today’s specials board, send new opening hours, forward a menu, send an event poster or a fresh photo — then forget about it. We handle the website.</p>
+<p style="color:#4f5d55"><b>Standard reasonable updates:</b> completed within 24 hours and included with the core package. <b>Need it changed now?</b> A £5 Priority Update jumps the queue for immediate handling by the 24/7 team.</p>
+</div>
 <div class="steps">
 <div class="step"><b>1. Send the brief</b><span>Tell us what the business needs and what you like.</span></div>
 <div class="step"><b>2. Send photos/content</b><span>Logo, photos, menu/services and anything you want included.</span></div>
@@ -92,6 +97,16 @@ textarea{min-height:120px;resize:vertical}.choices{display:grid;grid-template-co
 </div>
 
 <div class="section">
+<label class="title">How would you like to send future website changes?</label>
+<div class="choices">
+<label class="choice"><input type="checkbox" name="updates" value="WhatsApp"><span><b>WhatsApp</b><br>Photos, specials, opening hours and quick changes.</span></label>
+<label class="choice"><input type="checkbox" name="updates" value="Telegram"><span><b>Telegram</b><br>A simple always-on update channel.</span></label>
+<label class="choice"><input type="checkbox" name="updates" value="Text message"><span><b>Text message</b><br>Send a normal text whenever something changes.</span></label>
+<label class="choice"><input type="checkbox" name="updates" value="Email"><span><b>Email</b><br>Use email if that suits the business better.</span></label>
+</div>
+</div>
+
+<div class="section">
 <label class="title">Photos & branding</label>
 <div class="choices">
 <label class="choice"><input type="radio" name="photos" value="I have photos and will email them" checked><span>I have photos and will email them after submitting.</span></label>
@@ -140,6 +155,7 @@ function buildBrief(){
  const needs=selected('needs');
  const pages=selected('pages');
  const photos=selected('photos');
+ const updates=selected('updates');
  const style=document.getElementById('style').value;
  const brief=document.getElementById('brief').value.trim();
  const notes=document.getElementById('notes').value.trim();
@@ -161,6 +177,7 @@ function buildBrief(){
   '',
   'Style: '+style,
   'Photos: '+(photos[0]||'Not selected'),
+  'Preferred update channels: '+(updates.length?updates.join(', '):'Not selected'),
   '',
   'Short brief:',
   brief,
